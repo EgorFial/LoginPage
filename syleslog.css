@@ -1,0 +1,150 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background:
+    linear-gradient(45deg, rgb(210, 1, 183) 0%, hsla(352, 96%, 45%, 0) 70%),
+    linear-gradient(135deg, rgb(1, 148, 203) 10%, hsla(253, 95%, 42%, 0) 80%),
+    linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
+    linear-gradient(315deg, rgb(247, 233, 221) 100%, hsla(119, 96%, 49%, 0) 70%);
+}
+  
+  .title-main{
+    margin-left: 25%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    
+    color: #111111;
+
+  }
+
+  .main-box {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 700px;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.195);
+    border-radius: 57px;
+  }
+  
+  .main-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .main-box .user-box {
+    position: relative;
+  }
+  
+  .main-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+  }
+  .main-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .main-box .user-box input:focus ~ label,
+  .main-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .main-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .main-box a:hover {
+    background: #03e9f4;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+ 
+
+  .button-el{
+    margin: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+ color: #000000;
+    width: 300px;
+    height: 50px;
+    border-color: #6a847a00;
+    background: radial-gradient(279.81% 667.09% at 14.95% 0%, #ED42DB 0%, #01BBE1 100%);
+
+    border-radius: 30px;
+  }
+
+
+  .button-el:hover {
+    width: 300px;
+    height: 50px;
+    border-color:#ff00e600;
+    background: radial-gradient(279.81% 667.09% at 14.95% 0%, #bf47b3 0%, #00d5ff 100%);
+    color: #111111;
+   
+  }
+
+  .button-el:active{
+    transform: translateY(7px);
+
+  }
+
+  .transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateY(100px);
+  }
